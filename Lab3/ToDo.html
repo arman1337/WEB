@@ -1,0 +1,138 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>ToDo</title>
+        <link rel="icon" href="https://images.vexels.com/media/users/3/157931/isolated/preview/604a0cadf94914c7ee6c6e552e9b4487-curved-check-mark-circle-icon-by-vexels.png">
+
+        <style>
+            body {
+                margin: 0;
+                background-color: #a5c6c7;
+            }
+            .header {
+                background-color: #424b4b;
+                height: 5%;
+                color: white;
+                padding: 15px 20px;
+                margin: 0;
+                
+            }
+            .title {
+                margin: 5px;
+                font-size: 24px;
+            }
+            .mainBlock {
+                background-color: #f4efd0;
+                width: 75%;
+                height: 85%;
+                margin: auto;
+                text-align: center;
+            }
+            .footer {
+                text-align: center;
+                background-color: #c7d1d1;
+                height: 6%;
+                color: rgb(139, 135, 135);
+            }
+            .foot {
+                margin: 0;
+                font-size: 14px;
+                padding: 15px;
+            }
+            .todoTxt {
+                margin: 0;
+                padding: 20px;
+                text-align: left;
+                font-size: 28px;
+            }
+            #input {
+                height: 45px;
+                width: 75%;
+                font-size: 18px;
+                border: none;
+                padding: 10px;
+                margin: 0;
+            }
+            .addBtn {
+                height: 45px;
+                width: 10%;
+                border: none;
+                font-size: 18px;
+                background-color: #649b5c;
+
+            }
+            #list {
+                position: relative;
+                width: 90%;
+                margin-top: 15px;    
+
+            }
+            li {
+                text-align: left;
+                height: 30px;
+                background-color: white;
+                padding-left: 35px;
+                padding-top: 5px;
+                font-size: 18px;
+                color: rgb(45, 45, 48);
+                list-style-type: none;
+                border: 1px solid rgb(231, 226, 226);
+
+            }
+
+            .close {
+                text-align: center;
+                float: right;
+                margin-right: 15px;
+                width: 15px;
+            }
+            .close:hover {
+                background-color: #f44336;
+                color: white;
+            }
+
+            ul li:hover {
+                background: #ddd;
+            }
+
+            ul li.checked {
+                background: #888;
+                color: #fff;
+                text-decoration: line-through;
+            }
+            ul li.checked::before {
+                content: "✓";
+                padding-right: 0px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div class="header">
+            <h3 class="title">ToDo list</h3>
+        </div>
+
+        <div class="mainBlock">
+            <h2 class="todoTxt">Don't forget anything</h2>
+            <input id="input" type="text" placeholder="Enter your task...">
+            <button class="addBtn" onclick="newElement()">Add</button>
+
+            <ul id="list">
+                <li class="checked"> Make a web page using HTML </li>
+                <li class="checked">Style it with CSS </li>
+                <li class="checked">Write JavaScript</li>
+                <li>Defend the work</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p class="foot">Made by Arman Muratbekov, 2021</p>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
