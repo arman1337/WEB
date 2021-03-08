@@ -1,0 +1,27 @@
+.fieldset {
+  border: none;
+  text-align: center;
+}
+input {
+  width: 300px;
+}
+.list {
+  margin: auto;
+  list-style-type: none;
+  width: 50%;
+  padding-bottom: 40px;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+  text-align: center;
+}
+.delete {
+  color: crimson;
+}
