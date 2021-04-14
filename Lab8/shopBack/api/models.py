@@ -22,6 +22,10 @@ class Product(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=300)
 
+    class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
+
     def to_json(self):
         return {
             'id': self.id,
